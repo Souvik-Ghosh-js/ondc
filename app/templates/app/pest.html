@@ -2,77 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-     <title>ধরিত্রীকা</title>
+     <title>ONDC</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
    </head>
 <body>
-  <nav>
-    <div class="nav-content">
-      <div class="logo">
-        <a href="index.html"></a>
-        <img src="img/u1.png">
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><button class="btn">
-          <div class="wrapper">
-              <p class="text">Sign in </p>
-
-              <div class="flower flower1">
-                  <div class="petal one"></div>
-                  <div class="petal two"></div>
-                  <div class="petal three"></div>
-                  <div class="petal four"></div>
-              </div>
-              <div class="flower flower2">
-                  <div class="petal one"></div>
-                  <div class="petal two"></div>
-                  <div class="petal three"></div>
-                  <div class="petal four"></div>
-              </div>
-              <div class="flower flower3">
-                  <div class="petal one"></div>
-                  <div class="petal two"></div>
-                  <div class="petal three"></div>
-                  <div class="petal four"></div>
-              </div>
-              <div class="flower flower4">
-                  <div class="petal one"></div>
-                  <div class="petal two"></div>
-                  <div class="petal three"></div>
-                  <div class="petal four"></div>
-              </div>
-              <div class="flower flower5">
-                  <div class="petal one"></div>
-                  <div class="petal two"></div>
-                  <div class="petal three"></div>
-                  <div class="petal four"></div>
-              </div>
-              <div class="flower flower6">
-                  <div class="petal one"></div>
-                  <div class="petal two"></div>
-                  <div class="petal three"></div>
-                  <div class="petal four"></div>
-              </div>
-          </div>
-      </button></li>
-        <li><button class="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-          <svg viewBox="0 0 36 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
-          </svg>
-          Unlock Pro
-        </button></li>
-      </ul>
-    </div>
-  </nav>
+<nav style=" font-size:38px; font-weight: 600; "> <h2>Catalog Digitization </h2></nav>
   <style>
   /* Google Font Import Link */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
   *{
   margin: 0;
+  overflow: hidden !important;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -80,80 +25,21 @@
 }
 .body{
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 section{
-    height: 100vh;
-    overflow-x: hidden;
+    height: 70vh;
+    overflow: hidden;
 }
 
 nav{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  transition: all 0.4s ease;
-}
-nav.sticky{
-  padding: 10px 20px;
-  border-bottom-left-radius: 45px;
-  border-bottom-right-radius: 45px;
-  background: #f8f8f8;
-  z-index: 1000;
-  box-shadow: rgba(0, 0, 0, 0) 0px 10px 20px, rgb(93, 255, 180) 0px 6px 6px;
-}
-nav .nav-content{
-  height: 100%;
-  max-width: 1200px;
-  margin: auto;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: space-between;
+  margin: 50px 0 0 0 ;
 }
-nav .logo{
-  margin-top: -10px;
-}
-nav .logo img{
-  width: 120px;
-  padding: 0;
-  margin: 0;
-}
-nav .logo a{
-  font-weight: 500;
-  font-size: 35px;
-  padding-top:10px ;
-  background: -webkit-linear-gradient( #000000, #00a181);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-nav.sticky .logo a{
-  color: #fff;
-}
-.nav-content .nav-links{
-  display: flex;
-}
-.nav-content .nav-links li{
-  list-style: none;
-  margin-top: 30px;
-  margin-left: 15px;
-}
- .nav-links li a{
-  text-decoration: none;
-  color: #0E2431;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 5px 4px;
-  transition: all 0.3s ease;
-}
- .nav-links li a:hover{
-   color: #0f9444;
- }
- nav.sticky .nav-links li a{
-   transition: all 0.4s ease;
-}
- nav.sticky .nav-links li a:hover{
-  color: #4070f4;
-}
+
 .button {
   cursor: pointer;
   width: fit-content;
@@ -945,8 +831,16 @@ background: -webkit-linear-gradient( #000000, #00a181);
 
 .form-container {
 	height: 100vh;
+	margin: -30px 0;
 	display: flex;
+	overflow: hidden;
    	justify-content: center;
+	align-items: center;
+}
+.form-container1 {
+	display: flex;
+	flex-direction: column;
+   	justify-content: flex-start;
 	align-items: center;
 }
 .upload-files-container {
@@ -1169,6 +1063,13 @@ background: -webkit-linear-gradient( #000000, #00a181);
       margin-left: -30px;
       margin-top: 5px;
     }
+    #preloader {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    z-index: 1000; /* Make sure it's above other elements */
+}
   </style>
   <div class="section">
     <form class="form-container" id="predictionForm" method="post" action="/predict" enctype='multipart/form-data'>
@@ -1191,24 +1092,66 @@ background: -webkit-linear-gradient( #000000, #00a181);
       </div>
     </form>
       </div>
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel"><a href="#">ধরিত্রীকা</a></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="staticBackdropLabel"><a href="#">Catalog Digitization</a></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-           <div class="modal-body">
+            <div class="modal-body">
                 <div id="preloader" style="display: none;">
                     <div class="spinner-border" role="status">
                         <span class="visually-hidden">Loading...</span>
                     </div>
                 </div>
-                <div id="modalContent"></div>
+                <div id="modalContent">
+                    <!-- Form structure within the modal -->
+                    <form class="form-container1" id="productForm" style="padding:5px">
+                        <div class="image-container" style="text-align: right;">
+                            <img id="productImage" style="max-width: 100%; max-height: 150px;">
+                        </div>
+                        <style>
+                            .form-control{
+                            margin: auto;
+                            height: 30px;
+                            margin-bottom:2px;
+                            color: #999;
+                            border: 1px solid #888 ;
+                            }
+                            .form-label{
+                            margin: 2px 0;
+                            }
+                        </style>
+                        <div class="m-0">
+                            <label class="form-label">Product Name <span style="color: red">*</span></label>
+                            <input type="text" class="form-control" id="productName" name="productName" >
+                        </div>
+                        <!-- Add other input fields as needed -->
+                        <div class="m-0">
+                            <label class="form-label">Description <span style="color: red">*</span></label>
+                            <input type="text" class="form-control" id="description" name="description">
+                        </div>
+                        <div class="m-0">
+                            <label class="form-label">Price <span style="color: red">*</span></label>
+                            <input type="text" class="form-control" id="price" name="price">
+                        </div>
+                        <div class="m-0">
+                            <label class="form-label">Inventory <span style="color: red">*</span></label>
+                            <input type="text" class="form-control" id="inventory" name="inventory">
+                        </div>
+                        <div class="m-0">
+                            <label class="form-label">Color <span style="color: red">*</span></label>
+                            <input type="text" class="form-control" id="color" name="color">
+                        </div>
+                        <button type="submit" class="upload-button" >Save</button>
+                    </form>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
+
 <script>
     let uploadButton = document.querySelector(".upload-button");
 
@@ -1217,148 +1160,56 @@ background: -webkit-linear-gradient( #000000, #00a181);
 
         let formData = new FormData(document.getElementById('predictionForm'));
         let preloader = document.getElementById('preloader');
-        let modalContent = document.getElementById('modalContent');
 
         // Show the preloader
         preloader.style.display = 'block';
 
-        fetch('/predict', {
-            method: 'POST',
-            body: formData,
-        })
-        .then(response => response.json())
-        .then(data => {
-            // Update the modal content with the new data
-            modalContent.innerHTML = ""; // Clear existing content
-            for (let text of data.prediction) {
-                let paragraph = document.createElement("p");
-                paragraph.textContent = text;
-                modalContent.appendChild(paragraph);
-            }
+        // Extract the image data from the file input in the first form
+        let imageFile = document.getElementById('image').files[0];
+        let reader = new FileReader();
 
-            // Hide the preloader
-            preloader.style.display = 'none';
+        reader.onloadend = function () {
+            // Once the image data is loaded, set it as the source for the image in the modal
+            document.getElementById('productImage').src = reader.result;
 
-            // Show the modal
-            let modal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
-            modal.show();
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            // Hide the preloader in case of an error
-            preloader.style.display = 'none';
-        });
+            // Continue with the fetch request
+            fetch('/predict', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Update the modal content with the new data
+                document.getElementById('productName').value = data.prediction[0];
+
+                // Concatenate remaining values from the JSON response in the description field
+                let remainingValues = data.prediction.slice(1).join(' ');
+                document.getElementById('description').value = remainingValues;
+
+                // Populate other form fields as needed
+                document.getElementById('price').value = '';
+                document.getElementById('inventory').value = '';
+                document.getElementById('color').value = '';
+
+                // Hide the preloader
+                preloader.style.display = 'none';
+
+                // Show the modal
+                let modal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
+                modal.show();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Hide the preloader in case of an error
+                preloader.style.display = 'none';
+            });
+        };
+
+        // Read the image data as a data URL
+        reader.readAsDataURL(imageFile);
     });
 </script>
 
-<!--      <script>-->
-<!--        var isAdvancedUpload = function() {-->
-<!--      var div = document.createElement('div');-->
-<!--      return (('draggable' in div) || ('ondragstart' in div && 'ondrop' in div)) && 'FormData' in window && 'FileReader' in window;-->
-<!--    }();-->
 
-<!--    let draggableFileArea = document.querySelector(".drag-file-area");-->
-<!--    let browseFileText = document.querySelector(".browse-files");-->
-<!--    let uploadIcon = document.querySelector(".upload-icon");-->
-<!--    let dragDropText = document.querySelector(".dynamic-message");-->
-<!--    let fileInput = document.querySelector(".default-file-input");-->
-<!--    let cannotUploadMessage = document.querySelector(".cannot-upload-message");-->
-<!--    let cancelAlertButton = document.querySelector(".cancel-alert-button");-->
-<!--    let uploadedFile = document.querySelector(".file-block");-->
-<!--    let fileName = document.querySelector(".file-name");-->
-<!--    let fileSize = document.querySelector(".file-size");-->
-<!--    let progressBar = document.querySelector(".progress-bar");-->
-<!--    let removeFileButton = document.querySelector(".remove-file-icon");-->
-<!--    let uploadButton = document.querySelector(".upload-button");-->
-<!--    let fileFlag = 0;-->
-
-<!--    fileInput.addEventListener("click", () => {-->
-<!--      fileInput.value = '';-->
-<!--      console.log(fileInput.value);-->
-<!--    });-->
-
-<!--    fileInput.addEventListener("change", e => {-->
-<!--      console.log(" > " + fileInput.value)-->
-<!--      uploadIcon.innerHTML = 'check_circle';-->
-<!--      dragDropText.innerHTML = 'File Dropped Successfully!';-->
-<!--      document.querySelector(".label").innerHTML = `drag & drop or <span class="browse-files"> <input type="file" class="default-file-input" style=""/> <span class="browse-files-text" style="top: 0;"> browse file</span></span>`;-->
-<!--      uploadButton.innerHTML = `Upload`;-->
-<!--      fileName.innerHTML = fileInput.files[0].name;-->
-<!--      fileSize.innerHTML = (fileInput.files[0].size/1024).toFixed(1) + " KB";-->
-<!--      uploadedFile.style.cssText = "display: flex;";-->
-<!--      progressBar.style.width = 0;-->
-<!--      fileFlag = 0;-->
-<!--    });-->
-
-<!--    uploadButton.addEventListener("click", () => {-->
-<!--      let isFileUploaded = fileInput.value;-->
-<!--      if(isFileUploaded != '') {-->
-<!--        if (fileFlag == 0) {-->
-<!--            fileFlag = 1;-->
-<!--            var width = 0;-->
-<!--            var id = setInterval(frame, 50);-->
-<!--            function frame() {-->
-<!--                if (width >= 390) {-->
-<!--                  clearInterval(id);-->
-<!--              uploadButton.innerHTML = `<span class="material-icons-outlined upload-button-icon"> check_circle </span> Uploaded`;-->
-<!--                } else {-->
-<!--                  width += 5;-->
-<!--                  progressBar.style.width = width + "px";-->
-<!--                }-->
-<!--            }-->
-<!--          }-->
-<!--      } else {-->
-<!--        cannotUploadMessage.style.cssText = "display: flex; animation: fadeIn linear 1.5s;";-->
-<!--      }-->
-<!--    });-->
-
-<!--    cancelAlertButton.addEventListener("click", () => {-->
-<!--      cannotUploadMessage.style.cssText = "display: none;";-->
-<!--    });-->
-
-<!--    if(isAdvancedUpload) {-->
-<!--      ["drag", "dragstart", "dragend", "dragover", "dragenter", "dragleave", "drop"].forEach( evt =>-->
-<!--        draggableFileArea.addEventListener(evt, e => {-->
-<!--          e.preventDefault();-->
-<!--          e.stopPropagation();-->
-<!--        })-->
-<!--      );-->
-
-<!--      ["dragover", "dragenter"].forEach( evt => {-->
-<!--        draggableFileArea.addEventListener(evt, e => {-->
-<!--          e.preventDefault();-->
-<!--          e.stopPropagation();-->
-<!--          uploadIcon.innerHTML = 'file_download';-->
-<!--          dragDropText.innerHTML = 'Drop your file here!';-->
-<!--        });-->
-<!--      });-->
-
-<!--      draggableFileArea.addEventListener("drop", e => {-->
-<!--        uploadIcon.innerHTML = 'check_circle';-->
-<!--        dragDropText.innerHTML = 'File Dropped Successfully!';-->
-<!--        document.querySelector(".label").innerHTML = `drag & drop or <span class="browse-files"> <input type="file" class="default-file-input" style=""/> <span class="browse-files-text" style="top: -23px; left: -20px;"> browse file</span> </span>`;-->
-<!--        uploadButton.innerHTML = `Upload`;-->
-
-<!--        let files = e.dataTransfer.files;-->
-<!--        fileInput.files = files;-->
-<!--        console.log(files[0].name + " " + files[0].size);-->
-<!--        console.log(document.querySelector(".default-file-input").value);-->
-<!--        fileName.innerHTML = files[0].name;-->
-<!--        fileSize.innerHTML = (files[0].size/1024).toFixed(1) + " KB";-->
-<!--        uploadedFile.style.cssText = "display: flex;";-->
-<!--        progressBar.style.width = 0;-->
-<!--        fileFlag = 0;-->
-<!--      });-->
-<!--    }-->
-
-<!--    removeFileButton.addEventListener("click", () => {-->
-<!--      uploadedFile.style.cssText = "display: none;";-->
-<!--      fileInput.value = '';-->
-<!--      uploadIcon.innerHTML = 'file_upload';-->
-<!--      dragDropText.innerHTML = 'Drag & drop any file here';-->
-<!--      document.querySelector(".label").innerHTML = `or <span class="browse-files"> <input type="file" class="default-file-input"/> <span class="browse-files-text">browse file</span> <span>from device</span> </span>`;-->
-<!--      uploadButton.innerHTML = `Upload`;-->
-<!--    });-->
-<!--      </script>-->
   </body>
   </html>
